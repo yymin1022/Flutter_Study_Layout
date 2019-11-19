@@ -83,34 +83,52 @@ class _MyHomePageState extends State<MyHomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              Column(
-                children: <Widget>[
-                  FlutterLogo(),
-                  Text(
-                      "텍스트 1"
+              Expanded(
+                child: Container(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 20, right: 20, top: 10, bottom: 10),
+                    child: Column(
+                        children: <Widget>[
+                          Image.asset('assets/images/test_image.jpg'),
+                          Text("텍스트 1")
+                        ]
+                    )
                   )
-                ]
+                )
               ),
-              Column(
+              Expanded(
+                child: Container(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 20, right: 20, top: 10, bottom: 10),
+                    child: Column(
+                        children: <Widget>[
+                          Image.asset('assets/images/test_image.jpg'),
+                          Text("텍스트 2")
+                        ]
+                    )
+                  )
+                )
+              )
+            ]
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20, right: 20, top: 10, bottom: 10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Column(
                   children: <Widget>[
-                    FlutterLogo(),
                     Text(
-                        "텍스트 1"
+                      "제목 1",
+                      style: TextStyle(fontSize: 15),
+                    ),
+                    Text(
+                      "부제목 1",
+                      style: TextStyle(fontSize: 10),
                     )
                   ]
-              ),
-             ],
-            ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 10, bottom: 10),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Text(
-                  "텍스트 1",
-                  style: TextStyle(fontSize: 15 ),
                 ),
-                FlutterLogo()
+                Image.asset('assets/images/test_image.jpg', height: 70, fit: BoxFit.fitHeight)
               ]
             ),
           ),
@@ -119,11 +137,19 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Text(
-                  "텍스트 1",
-                  style: TextStyle(fontSize: 15),
+                Column(
+                    children: <Widget>[
+                      Text(
+                        "제목 1",
+                        style: TextStyle(fontSize: 15),
+                      ),
+                      Text(
+                        "부제목 1",
+                        style: TextStyle(fontSize: 10),
+                      )
+                    ]
                 ),
-                FlutterLogo()
+                Image.asset('assets/images/test_image.jpg', height: 70, fit: BoxFit.fitHeight)
               ]
             ),
           ),
@@ -132,11 +158,19 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Text(
-                  "텍스트 1",
-                  style: TextStyle(fontSize: 15),
+                Column(
+                    children: <Widget>[
+                      Text(
+                        "제목 1",
+                        style: TextStyle(fontSize: 15),
+                      ),
+                      Text(
+                        "부제목 1",
+                        style: TextStyle(fontSize: 10),
+                      )
+                    ]
                 ),
-                FlutterLogo()
+                Image.asset('assets/images/test_image.jpg', height: 70, fit: BoxFit.fitHeight)
               ]
             ),
           )
