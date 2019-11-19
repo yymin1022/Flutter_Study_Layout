@@ -120,11 +120,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: <Widget>[
                     Text(
                       "제목 1",
-                      style: TextStyle(fontSize: 15),
+                      style: TextStyle(fontSize: 20),
                     ),
                     Text(
                       "부제목 1",
-                      style: TextStyle(fontSize: 10),
+                      style: TextStyle(fontSize: 15),
                     )
                   ]
                 ),
@@ -141,11 +141,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: <Widget>[
                       Text(
                         "제목 1",
-                        style: TextStyle(fontSize: 15),
+                        style: TextStyle(fontSize: 20),
                       ),
                       Text(
                         "부제목 1",
-                        style: TextStyle(fontSize: 10),
+                        style: TextStyle(fontSize: 15),
                       )
                     ]
                 ),
@@ -162,11 +162,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: <Widget>[
                       Text(
                         "제목 1",
-                        style: TextStyle(fontSize: 15),
+                        style: TextStyle(fontSize: 20),
                       ),
                       Text(
                         "부제목 1",
-                        style: TextStyle(fontSize: 10),
+                        style: TextStyle(fontSize: 15),
                       )
                     ]
                 ),
