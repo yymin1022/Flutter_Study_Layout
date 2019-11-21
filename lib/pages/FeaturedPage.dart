@@ -53,25 +53,31 @@ class _FeaturedPageState extends State<FeaturedPage> with SingleTickerProviderSt
   }
 
   buildDummyContent() {
-    Column(
+   return Column(
       children: <Widget>[
         onlyTextCell("국도닭 꼬꼬 드디어.gif"),
         onlyTextCell("한국의 메뚜기를 찾아서"),
         onlyTextCell("무기제작) 윈스턴 무기 제작기"),
         buildRowDiv2(
           columnImageTextCell(
-            data: dummyNews[0]
+              data: dummyNews()[0]
           ),
           columnImageTextCell(
-              data: dummyNews[0]
-          )
-        )
+              data: dummyNews()[2]
+          ),
+        ),
+        refImageTextCell(data: dummyNews()[0]),
+        refImageTextCell(data: dummyNews()[1]),
+        refImageTextCell(data: dummyNews()[2]),
+        refImageTextCell(data: dummyNews()[3]),
+        refImageTextCell(data: dummyNews()[4]),
+        refImageTextCell(data: dummyNews()[5]),
       ],
     );
   }
 
   buildRowDiv2(widget1, widget2) {
-    Row(
+    return Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           Expanded(
